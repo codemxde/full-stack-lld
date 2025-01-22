@@ -1,0 +1,73 @@
+<!-- This document focuses on HTML Forms -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form>
+      <label for="">Name</label>
+      <!-- maxlength works while typing for Name -->
+      <input type="text" maxlength="10" placeholder="first-name" />
+      <label for="">Email</label>
+      <input type="email" placeholder="enter mail id" />
+      <label for="">Password</label>
+      <input type="password" placeholder="enter secret pasword" />
+
+      <!-- Numerical Input -->
+      <label for="">Phone Number</label>
+      <!-- you still will be able to type more than 10 digits,
+       just won't be able to submit -->
+      <input
+        type="number"
+        maxlength="10"
+        pattern="\d{10}"
+        placeholder="fill contact details"
+      />
+      <label for="">Age</label>
+      <input type="number" min="18" max="25" placeholder="enter age" />
+
+      <!-- DOBs -->
+      <label for="">Date of Birth</label>
+      <!-- we can restrict the timeline using yyyy-mm--dd format -->
+      <input type="date" min="1998-07-23" max="2025-01-22" />
+      <label for="">Favourite Food</label>
+
+      <!-- Checkboxes -->
+      <input type="checkbox" />Pizza <input type="checkbox" />Pink Sauce Pasta
+      <input type="checkbox" />Grilled Sandwiches
+
+      <!-- File Type Inputs -->
+      <label for="">Upload File</label>
+      <!-- we can restrict the types of upload files -->
+      <input type="file" accept=".pdf, .png, .jpeg" />
+
+      <!-- Radio Buttons -->
+      <label for="">Gender</label>
+      <!-- unless we want only all radio button's to be selected
+       we have to give same "name" attribute for all radio's -->
+      <input type="radio" name="gender" />Male
+      <input type="radio" name="gender" />Female
+      <input type="radio" name="gender" />Superman
+      <input type="radio" name="gender" />Wonder Woman
+
+      <!-- Dropdowns -->
+      <label for="">Which is your Dream Car ?</label>
+      <select name="" id="">
+        <option value="">Audi</option>
+        <option value="">McLaren</option>
+        <option value="">BMW</option>
+        <option value="">Lamborghini</option>
+      </select>
+
+      <!-- Selecting Color -->
+      <label for="">Tippy Tippy Tap Which Color do you want 😂 ?</label>
+      <input type="color" />
+
+      <!-- Submit Button -->
+      <button type="submit">Sumbit Form</button>
+    </form>
+  </body>
+</html>
