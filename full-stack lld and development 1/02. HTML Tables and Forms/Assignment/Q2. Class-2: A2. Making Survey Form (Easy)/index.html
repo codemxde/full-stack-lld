@@ -1,0 +1,70 @@
+<!-- Raw Problem -->
+<!-- Create an HTML form for a survey to collect information
+ about the favourite food of people.
+
+The survey should include the following fields:
+Name (text input)
+Age (number input)
+Gender (radio buttons with Male and Female options)
+Favorite Food (drop-down list with options like
+Pizza, Chinese food, Indian food, etc.)
+Do you like to cook? (checkbox with Yes/No options)
+Additional comments (textarea input)
+Submit button 
+
+For reference, there is an image 'form.png' in this folder
+-->
+
+<!-- The following submission was not accepted, but I think I was able
+ to nail the look of the form bit-by-bit -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <section>
+      <h1>Survey Form</h1>
+      <form>
+        <div>
+          <label>Name</label>
+          <input type="text" />
+        </div>
+        <div>
+          <label>Age</label>
+          <input type="number" />
+        </div>
+        <div>
+          <label>Gender</label>
+          <input type="radio" name="gender" /> Male
+          <input type="radio" name="gender" /> Female
+        </div>
+        <div>
+          <label>Favourite Food</label>
+          <select>
+            <option>Pizza</option>
+            <option>Chinese Food</option>
+            <option>Indian</option>
+            <option>Korean</option>
+          </select>
+        </div>
+        <div>
+          <label>Do you like to Cook ?</label>
+          <input type="checkbox" /> Yes <input type="checkbox" /> No
+        </div>
+        <div>
+          <label>Additional comments: </label>
+          <!-- for text area, there is a spearate element and not
+           inside as a type under input type -->
+          <textarea></textarea>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
