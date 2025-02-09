@@ -1,0 +1,21 @@
+- Font family is a property which determines how the font should look
+
+- Arial, Times New Roman etc. are all "fonts"
+
+- However, in font family, we provide several font names, belonging to a same family
+  and then they can server as a 'fallback' system 
+
+- Font Family property is usually given to the body tag, because we want the entire
+  webpage to  have a similar looking font/feel
+
+Q. Serif vs Sans Serif?
+A. sans-serif is like a modern type face where the edges are a litle smooth and has
+   modern look and feel.
+   If none of the fonts are matching/supported by current browser, sans-serif is a
+   font that the browsers will defintel support
+
+   serif has pointy edges, which has a 'typewriter' look and feel
+
+Q. What is Font Weight ?
+A. Font Weight is used to decide the intensity/thickness of the font, with values
+   ranging from 100 to 900

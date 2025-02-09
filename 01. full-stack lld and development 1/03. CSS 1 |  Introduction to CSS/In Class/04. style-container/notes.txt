@@ -1,0 +1,6 @@
+What is "vh" ?
+- 'vh' or View Height, is the entire height of the browser window
+- Your browser window has 100vh
+- So, if we mention "height: 50vh", we mean that out of those 100 units, occupy 50
+
+Similarly we have 'vw' which corresponds to view-width

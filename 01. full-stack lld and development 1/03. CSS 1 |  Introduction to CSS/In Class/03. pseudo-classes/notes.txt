@@ -1,0 +1,4 @@
+Pseudo classes are special kind of selectors in CSS
+They allow us to select a special state of an element
+
+For Ex: Styling an element only when it is "hovered" over 
