@@ -3,17 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Intro to React</title>
+    <title>Components</title>
   </head>
   <body>
     <div id="root"></div>
-    <!-- <script>
-      const root = document.getElementById("root");
-      const headingEle = document.createElement("h1");
-
-      headingEle.innerHTML = "Hello from JS";
-      root.appendChild(headingEle);
-    </script> -->
     <script
       crossorigin
       src="https://unpkg.com/react@18/umd/react.development.js"
@@ -22,11 +15,14 @@
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
     ></script>
-    <script>
-      const rootEle = document.getElementById("root");
-      const headingEle = React.createElement("h1", null, "Welcome to React");
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-      ReactDOM.render(headingEle, rootEle);
+    <script type="text/babel">
+      function MyApp() {
+        return <h1>Welcome to React</h1>;
+      }
+
+      ReactDOM.render(<MyApp />, document.getElementById("root"));
     </script>
   </body>
 </html>
