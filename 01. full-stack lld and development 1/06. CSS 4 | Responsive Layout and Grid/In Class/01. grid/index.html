@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grids</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        /* background-color: lightgoldenrodyellow; */
+      }
+      .container {
+        border-radius: 10px;
+        margin: 20px auto;
+        width: 1200px;
+        padding: 20px;
+        display: grid;
+        column-gap: 30px;
+        row-gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: lightpink;
+      }
+      .box {
+        border-radius: 10px;
+        background-color: lightcyan;
+        border: 2px solid black;
+        padding: 20px;
+      }
+      .box:nth-of-type(even) {
+        background-color: lightgrey;
+      }
+      .box:nth-of-type(1) {
+        grid-row: span 2;
+      }
+      .box:nth-of-type(2) {
+        grid-column: -3/-1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+    </div>
+  </body>
+</html>

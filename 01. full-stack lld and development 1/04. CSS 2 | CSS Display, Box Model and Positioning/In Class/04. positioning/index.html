@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positioning</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        position: relative;
+        border: 5px solid sandybrown;
+        height: 500px;
+      }
+      img {
+        height: 250px;
+        width: 200px;
+      }
+      .black-panther {
+        position: relative;
+        top: 50px;
+        left: 50px;
+      }
+      .joker {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+      }
+      .brahmastra {
+        position: fixed;
+        bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="avengers" src="./assets/avengers.jpeg" alt="" />
+      <img class="black-panther" src="./assets/black-panther.jpeg" alt="" />
+      <img class="joker" src="./assets/joker.jpeg" alt="" />
+      <img class="brahmastra" src="./assets/brahmastra.jpeg" alt="" />
+    </div>
+  </body>
+</html>
