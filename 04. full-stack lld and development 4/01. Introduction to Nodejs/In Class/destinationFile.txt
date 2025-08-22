@@ -1,0 +1,1 @@
+My data will be copied through read and write stream!
