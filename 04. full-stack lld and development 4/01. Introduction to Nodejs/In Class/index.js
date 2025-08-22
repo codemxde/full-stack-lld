@@ -24,3 +24,42 @@ fs.rename('./write.txt', 'rewrite.txt', (err) => {
   }
   console.log('File rename successful');
 });
+
+const path = require('path');
+const completePath = path.join('root', 'folder', 'subfolder', 'file.txt');
+console.log('Complete Path: ' + completePath);
+
+const fileName = path.basename(completePath);
+console.log('File Anme: ' + fileName);
+
+const extensionName = path.extname(completePath);
+console.log('File Extension: ', extensionName);
+
+const pathInfo = path.parse(completePath);
+console.log('Path Info: ', pathInfo);
+
+const normalizedPath = path.normalize('/path/./to/../to/../../file.txt');
+console.log('Normalized Path: ', normalizedPath);
+
+// * Copy file from One Folder to Another
+const sourceFilePath = './dir/file.txt';
+const destinationFilePath = './destinationFile.txt';
+
+const readStream = fs.createReadStream(sourceFilePath);
+const writeStream = fs.createWriteStream(destinationFilePath);
+
+// connect the two streans using a pipe
+readStream.pipe(writeStream);
+
+// attach events
+readStream.on('error', (err) => {
+  console.log('Unable to read file:', err);
+});
+
+writeStream.on('error', (err) => {
+  console.log('Unable to write file:', err);
+});
+
+writeStream.on('finish', () => {
+  console.log('File copied successfully');
+});
